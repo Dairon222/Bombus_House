@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es-CO" class="h-100">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bombus House - Service</title>
+    <meta name="theme-color" content="#33C1FF">
+    <meta name="MobileOptimized" content="width">
+    <meta name="HandhledFriendly" content="true">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar" content="black-traslucent">
+    <!--Tags SEO-->
+    <meta name="author" content="Bombus House">
+    <meta name="description" content="Aplicativo para el hotel Bombus House">
+    <meta name="keyworks" content="HOTEL, hotel, Hotel, APP, app, App, BOMBUS, bombus, Bombus, HOUSE, house, House, ABEJORRAL, abejorral, Abejorral">
+    <!--Favicon-->
+    <link rel="icon" type="image/x-icon" href="media/Logo Bombus House JPG.jpg">
+    <link rel="apple-touch-icon" type="image/png" href="media/Logo Bombus House JPG.jpg" class="rounded-circle">
+    <link rel="apple-touch-startup-image" type="image/png" href="media/Logo Bombus House JPG.jpg">
+    <!--Styles Boostrap 5.3.1 Alpha-->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+    <script type="text/javascript" src="assets/js/bootstrap.bundle.js"></script>
+    <!--app-->
+    <link rel="stylesheet" href="assets/cssweb/servicios.css">
+    <!--DataTables Styles-->
+    <link rel="stylesheet" type="text/css" href="../assets/datatables/css/dataTables.bootstrap5.min.css">
+    <!--DataTables Buttons-->
+    <link rel="stylesheet" type="text/css" href="../assets/datatables/css/buttons.bootstrap5.css">
+    <!--DataTables Scripts-->
+    <script type="text/javascript" src="../assets/datatables/js/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="../assets/datatables/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript">
+  $(document).ready(function () {
+    $('#tableresponsive').DataTable({
+      responsive: true,
+    });
+  });
+</script>
+</head>
+<body class="h-100">
+
+    <main>
+        <div class="container-fluid">
+            <div class="row">
+              <div class="col-12 col-md-3">
+                <!-- Este es el panel lateral con las opciones de administración -->
+                <div class="list-group">
+                  <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+                    <i class="bi bi-house-door-fill"></i> Inicio
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action">
+                    <i class="bi bi-person-fill"></i> Clientes
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action">
+                    <i class="bi bi-calendar-check-fill"></i> Reservas
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action">
+                    <i class="bi bi-cash-stack"></i> Pagos
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action">
+                    <i class="bi bi-gear-fill"></i> Configuración
+                  </a>
+                </div>
+              </div>
+              <div class="col-12 col-md-9">
+                <!-- Este es el contenido principal de la sección de administrador -->
+                <h1>Bienvenido al panel de administración del hotel</h1>
+                <p>Desde aquí podrá gestionar todos los aspectos relacionados con el funcionamiento del hotel, como los clientes, las reservas, los pagos y la configuración.</p>
+                <div class="row">
+                  <!-- Este es un ejemplo de una tarjeta con información relevante -->
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card text-white bg-primary mb-3">
+                      <div class="card-header">Clientes registrados</div>
+                      <div class="card-body">
+                        <h5 class="card-title">150</h5>
+                        <p class="card-text">Este es el número total de clientes que se han registrado en el aplicativo web del hotel.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Este es otro ejemplo de una tarjeta con información relevante -->
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card text-white bg-success mb-3">
+                      <div class="card-header">Reservas confirmadas</div>
+                      <div class="card-body">
+                        <h5 class="card-title">50</h5>
+                        <p class="card-text">Este es el número total de reservas que se han confirmado en el aplicativo web del hotel.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Este es otro ejemplo de una tarjeta con información relevante -->
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card text-white bg-danger mb-3">
+                      <div class="card-header">Pagos pendientes</div>
+                      <div class="card-body">
+                        <h5 class="card-title">20</h5>
+                        <p class="card-text">Este es el número total de pagos que están pendientes de realizar por parte de los clientes.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </main>
+
+</body>
+</html>

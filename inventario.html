@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inventario del Hotel</title>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.25/css/dataTables.bootstrap5.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Inventario del Hotel</h1>
+        <table id="inventario" class="table table-striped table-bordered" style="width:100%">
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Cantidad</th>
+                    <th>Ubicación</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Toallas</td>
+                    <td>50</td>
+                    <td>Almacén</td>
+                </tr>
+                <tr>
+                    <td>Jabón</td>
+                    <td>100</td>
+                    <td>Almacén</td>
+                </tr>
+                <tr>
+                    <td>Shampoo</td>
+                    <td>100</td>
+                    <td>Almacén</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+    <!-- DataTables -->
+    <script src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
+
+    <!-- Bootstrap 5 -->
+    <script src="https://cdn.datatables.net/1.10.25/js/dataTables.bootstrap5.min.js"></script>
+
+    <!-- Inicialización de DataTables -->
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#inventario').DataTable();
+        });
+    </script>
+
+</body>
+</html>

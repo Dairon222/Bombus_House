@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bombus House</title>
+    <meta name="theme-color" content="#33C1FF">
+    <meta name="MobileOptimized" content="width">
+    <meta name="HandhledFriendly" content="true">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar" content="black-traslucent">
+    <!--Tags SEO-->
+    <meta name="author" content="Bombus House">
+    <meta name="description" content="Aplicativo para el hotel Bombus House">
+    <meta name="keyworks" content="HOTEL, hotel, Hotel, APP, app, App, BOMBUS, bombus, Bombus, HOUSE, house, House, ABEJORRAL, abejorral, Abejorral">
+    <!--Favicon-->
+    <link rel="icon" type="image/x-icon" href="media/Logo Bombus House JPG.jpg">
+    <link rel="apple-touch-icon" type="image/png" href="media/Logo Bombus House JPG.jpg" class="rounded-circle">
+    <link rel="apple-touch-startup-image" type="image/png" href="media/Logo Bombus House JPG.jpg">
+    <!--Styles Boostrap 5.3.1 Alpha-->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+    <script type="text/javascript" src="assets/js/bootstrap.bundle.js"></script>
+    <!--app-->
+    <link rel="stylesheet" href="app/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="assets/cssweb/habi.css">
+
+    <script src="app/Habitaciones/habi.js"></script>
+</head>
+<body class="h-100">
+  <header>
+    <!-- Navbar Start -->
+    <div class="container-fluid bg-white sticky-top">
+      <div class="container">
+          <nav class="navbar navbar-expand-lg bg-white navbar-light py-2 py-lg-0">
+              <a href="index.html" class="navbar-brand">
+                  <img class="img-fluid py-2" src="media/Logo Bombus House JPG.jpg" alt="Logo">
+              </a>
+              <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarCollapse">
+                  <div class="navbar-nav ms-auto">
+                      <a href="Bienvenida.html" class="nav-item nav-link">Inicio</a>
+                      <a href="servicios.php" class="nav-item nav-link">Servicios</a>
+                      <a href="nosotros.html" class="nav-item nav-link">Nosotros</a>
+                      <a href="galeria.html" class="nav-item nav-link">Galeria</a>
+                      <a href="reservas.html" class="nav-item nav-link">Registro</a>
+                  </div>
+                  <div class="border-start ps-4 d-none d-lg-block">
+                      <button type="button" class="btn btn-sm p-0"><i class="fa fa-search"></i></button>
+                  </div>
+              </div>
+          </nav>
+      </div>
+  </div>
+  </header>
+
+  <main>
+  <section class="grainy-gradient-intro">
+    <svg height="0" width="0">
+      <filter id='f'>
+        <feTurbulence type='fractalNoise' baseFrequency='.5' />
+      </filter>
+    </svg>
+    <div class="d-flex justify-content-center align-items-center text-center" style="height: calc(80vh - 6px);">
+      <h1 class="display-1 fw-bold text-uppercase text-dark mb-0 animate__animated animate__slideInLeft" style="letter-spacing: 55px;">Bombus House</h1>
+    </div>
+
+    <a href="exposicion.html">
+    <button class="button"></button>
+  </a>
+  
+  </section>
+</main>
+
+
+  <style>
+
+    main {
+      background: linear-gradient(rgba(54, 147, 68, 0.7), rgba(46, 70, 13, 0.7)), center center no-repeat;
+    }
+.grainy-gradient-intro:before, .grainy-gradient-intro:after {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  --grad: radial-gradient(at 50%, red, rgba(255, 0, 0, 0.3) 55%, transparent 80%);
+  --mask: var(--grad), var(--grad);
+  -webkit-mask: var(--mask);
+  -webkit-mask-composite: source-in;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+  -webkit-mask-composite: source-in, xor;
+  mask-composite: intersect;
+  mix-blend-mode: unset;
+  content: "";
+}
+
+.grainy-gradient-intro:after {
+   background: linear-gradient(
+90deg, #580202 20%, rgb(15, 76, 167), #764803);
+}
+
+.button {
+  border-radius: 100px;
+  overflow: hidden;
+  width: 100px;
+  height: 30px;
+  background: rgb(0, 0, 0);
+}
+  </style>
+    
+</body>
+</html>
